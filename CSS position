@@ -87,8 +87,8 @@
 
 =====================================================================================================================
 					// sticky < fixed *sticky is not cover for all browser **fixed is better
-					// sticky : Definition(headerとかを固定する)
-					// fixed : Definition(端とかにbarを固定)
+					// sticky : Definition　(headerとかをスクロール後にどこかの端に残らせる)
+					// fixed : Definition　(端とかにbarの位置を完全に固定する)
 .newbox{
 	background-color: yellow;
 	position: fixed;		// this guy

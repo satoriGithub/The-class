@@ -1,0 +1,44 @@
+======================================================================================
+<!DOCTYPE html>   >>>relative: 相対
+<html>
+	<head>
+		<title>HTML Tutorial</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="bigbox">
+			<div id="box1" class="box">1</div>
+			<div id="box2" class="box noth">2</div>
+			<div id="box3" class="box">3</div>
+			<div id="box4" class="box noth">4</div>
+		</div>
+	</body>
+</html>
+
+---------------------------------------------------------------------
+　　　　　　　　　　　　　　　　　　//大きいboxを作って小さいboxを動かす方法
+#bigbox{
+	border-style: dotted;
+	display: inline-block;
+	position: relative;　　　　　　//これが外箱にあることで小箱は外箱の中に納まる
+}
+.box{
+	background-color: tomato;
+	margin: left;
+	width: 100px;
+	height: 100px;
+	display: inline-block;　　　　//これが横並びboxの作り方の方法
+}
+#box2{
+	background-color: green;
+	position: absolute;　　　　　//An absolute is kinda position element.
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px; 
+}
+.box:not(.noth){　　　　　　　//　【.box:not(#box2)とIDで縛ることは同じ】
+　position: relative;        //いろいろ書き方の方法あり。id括りは簡単だけど、数が多いと難しいのでこれはその時に役立つ
+	top: 50px;　         　　　// DO NOT WRITE THIS : not(この()内に２個以上のID。ものを縛る時はclassに同じ名前を投入、それを書く)
+}
+===========================================================================================

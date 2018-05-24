@@ -97,3 +97,15 @@
 	left:10px;
         top:100px;
 }
+
+=======================================================================================================================
+//note
+	{
+	background: linear-gradient(rgba(0,50,100,0.1), rgba(0,50,100,1), url('image1.jpg') 
+			}                                          //It necessary to use ","!
+	{
+	background: url('image1.jpg') no-repeat top / cover;
+	}	                　 //↑doesn't need ","
+			                          //↑and I need "/" before use "background-size"
+
+

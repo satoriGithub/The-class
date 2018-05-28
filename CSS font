@@ -2,7 +2,7 @@ p{
 	font-style: normal;    /*style; normal italic oblique initial inherit */
 	font-variant: normal;  /*variant; ormal small-caps(make caps on the top) initial inherit*/
 	font-weight: normal;   /*weight; normal bold bolder lighter number unset initial inherit */
-	font-size: xx-small;   /*size; medium(=its 16pxi) xx-small x-small small large x-large xx-large*/
+	font-size: 1.2em;      /*size; medium(=its 16pxi) xx-small x-small small large x-large xx-large*/
 	font: icon; 	       /*caption icon menu message-box small-caption status-bar */
 	text-decoration-line: line-through;	/*none underline overline line-through initial inherit*/
 	text-decoration-color: red;  	/* color */
@@ -13,10 +13,18 @@ p{
 	text-indent: 10px;
 	text-shadow: 10px 0px 5px red; /*(10px=h-shadow, 0px=v-shadow, 5px=blur-radius, red=color none initial */
 	direction: rtl; /* ltr rtl initial iniherit */
-	unicode-bidi: bidi-override;  	/* like a mirrae */
-	letter-spacing: 3px; 		/* make the space between letter and letter.*/
-
-
+	unicode-bidi: bidi-override;  		/* like a mirror */
+	letter-spacing: 3px; 			/* make the space between letter and letter.*/
+	justify-content: ;			/* */
+	user-select: none;			/* people can not use the paragraph (can not select)*/
+	visibility: hidden;  			/*  It's difference as " display: none;". */
+	
+	
+	this is set
+  1,	@media screen and( ) tag {}		/* when the simarginze change, change the action */
+  2,	<link rel="stylesheet" type="text/css" media="screen and( min-width:900px)" href="style.css">
+						/* Link is necessary when using */
+		
 }
 	
   line-height: 80%;      /*line-height:(It's like a margin for paragraph.) number lengthy initial inherit*/

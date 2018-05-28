@@ -1,0 +1,18 @@
+p{
+	font-style: normal;    /*style; normal italic oblique initial inherit */
+	font-variant: normal;  /*variant; ormal small-caps initial inherit*/
+	font-weight: normal;   /*weight; normal bold bolder lighter number unset initial inherit */
+	font-size: xx-small;   /*size; medium(=its 16pxi) xx-small x-small small large x-large xx-large*/
+  line-height: 80%;      /*line-height:(It's like a margin for paragraph.) number lengthy initial inherit*/
+  font-family: Rockwell;
+  font: normal small-caps lighter 1.2em/110% Rockwell;  /* I may need a slash some situations */
+                                                        /* I can write everything for one line for this*/
+}
+
+ 
+	/*Note: 1em=16px 2em=32px 1rem= ...*/ 
+  /* oblique斜めの　variantバリアント　*/
+
+p.second:hover{             /* Characters change when hovering the sentences.　*/
+	font-weight: normal;  
+}

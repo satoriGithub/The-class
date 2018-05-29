@@ -1,0 +1,106 @@
+====================== outline ================================================================
+<h1> block inline inlineblock</h1>
+		<div class="container">
+			<div class="blockbox">1 block</div>
+			<div class="blockbox">2 block</div>
+			<div class="blockbox">3 block</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="inlinebox">4 inline</div>
+			<div class="inlinebox">5 inline</div>
+			<div class="inlinebox">6 inline</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="inlineblockbox">7 inlineblock</div>
+			<div class="inlineblockbox">8 inlineblock</div>
+			<div class="inlineblockbox">9 inlineblock</div>
+		</div>
+ ---------------------------------------------------------------------
+ 	/* 	outline-width: 10px; 
+      outline-style: solid;
+      outline-color: pink; 
+      outline-offset: 10px;
+      display: inline-block;   */
+      
+.blockbox{
+  width: 150px;
+  height: 150px;
+  background: #f45f42;
+  border: 1px dashed black;
+  line-height: 150px;
+  display: block;
+  margin: 20px;
+}
+.inlinebox{
+	width: 150px;
+	height: 150px;
+	background: #bbf441;
+	padding: 20px
+	border: 1px dashed black;
+	line-height: 150px;
+	display: inline;
+	margin: 20px;
+}
+.inlineblockbox{
+	width: 150px;
+	height: 150px;
+	background: #f441f4;
+	padding: 20px;
+	border: 1px dashed black;
+	line-height: 150px;
+	display: inline-block;
+	margin-left: 20px;
+}
+.container{
+	text-align: center;
+}
+  
+=============== How to make partitions in the big box =========================================
+.container{ 
+	width: 300px;
+	height: 200px;
+	background: pink;
+	border: 2px dashed black;
+	display: flex;                  /* Or I can use flex-direction*/
+}
+.box1{                            /*works together*/
+	color: tomato;
+	font-family: Arial;
+	font-size: 2em;
+	line-height: 200px;
+	text-align: center;
+	border: 1px dashed gray;
+  flex-grow: 1;
+}
+.box2 {
+	color: tomato;
+	font-family: Arial;
+	font-size: 2em;
+	line-height: 200px;
+	text-align: center;
+	border: 1px dashed gray;
+	flex-grow: 2;
+}
+.box3 {
+	color: tomato;
+	font-family: Arial;
+	font-size: 2em;
+	line-height: 200px;
+	text-align: center;
+	border: 1px dashed gray;
+	flex-grow: 3;
+}
+============================= display flex ===================================================
+.flax-container{
+	display: flex;
+	justify-content: space-around;  /* flex-start flex-end center space-between space-around initial in */
+	                                /* space-between and around is different  */
+}
+.flax-items{
+	border: 2px solid green; 
+	padding: 10px;
+	width: 15%;
+	margin: 2px;
+}
